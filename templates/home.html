@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>     
+    <div class="home">
+        <h1 style="color: aliceblue;">You're welcome here...</h1>
+        <!-- Add logout button linked to the Django logout URL -->
+        <button ><a id="logout" href="{% url 'logout' %}">Logout</a></button>
+    </div>
+</body>
+</html>
